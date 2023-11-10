@@ -10,7 +10,7 @@ html {
 
 .container-navbar {
     background-color: #02316C;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
 }
 
@@ -22,12 +22,19 @@ html {
 }
 
 .li-navbar{
-    background-color: #0756b5;
-    border: white solid 1px;
     list-style-type: none;
-    padding: 20px;
-    color: white;
+    padding: 15px;
     margin: 5px;
+}
+
+.li-navbar:hover{
+    background-color: whitesmoke;
+    transition:  0.3s ease-in-out;
+    transition-delay: 0.1s;
+    border-radius: 3px;
+    .a-navbar {
+        color: black;
+    }
 }
 
 .container-content {
@@ -38,9 +45,20 @@ html {
     height: 70vh;
 }
 
+.a-content {
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px ;
+}
+
 .img-content {
-    height: 30%;
-    width: 30%;
+    height: 250px;
+    width: 250px;
 }
 
 .container-footer {
@@ -49,13 +67,23 @@ html {
     justify-content:  center;
     justify-items: center;
     display: center;
-    height: 10vh;
+    height: 15vh;
 }
 
 .h1-footer {
     font-size: 20px;
+    color: white;
+    padding-top: 20px;
 }
 
 .h2-footer {
     font-size: 10px;
+    color: white;
 }
+
+.a-navbar {
+    color:white;
+    text-decoration: none;
+}
+
+
