@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #root{
+        background-color: tomato;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div id="root">
+        <input type="text" inptplaceholder="username" id="usernameInput"/>
+        <input type="password" inptplaceholder="password" id="passwordInput"/>
+
+        <button onclick="onLogin()">LOGGIN</button>
+    </div>
+    <script>
+        let usernameInput = document.getElementById('usernameInput');
+        let password = document.getElementById('passwordInput');
+        function onLogin(){
+            console.log('tombol login di click');
+            console.log(usernameInput.value)
+            console.log(password.value);
+
+            if(usernameInput.value =="admin" && password.value == "123"){
+                alert('login sebgai admin');
+            }
+            else{
+                alert('bukan admin');
+            }
+
+        }
+    </script>
+</body>
+</html>
